@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://rafirafika.github.iohttps://github.com/rafirafika/Docosaurus/blog</id>
+    <title>React Bootstrap Blog</title>
+    <updated>2020-07-10T06:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://rafirafika.github.iohttps://github.com/rafirafika/Docosaurus/blog"/>
+    <subtitle>The best place to stay up-to-date with the latest React Bootstrap news and events.</subtitle>
+    <logo>https://rafirafika.github.iohttps://github.com/rafirafika/Docosaurus/img/RBoost.svg</logo>
+    <rights>Copyright © 2020 Designed and built with all the love in the world by Me</rights>
+    <entry>
+        <title type="html"><![CDATA[continue the previous blog]]></title>
+        <id>https://rafirafika.github.iohttps://github.com/rafirafika/Docosaurus/blog/2020/07/10/Start-imitate-docWeb.html</id>
+        <link href="https://rafirafika.github.iohttps://github.com/rafirafika/Docosaurus/blog/2020/07/10/Start-imitate-docWeb.html"/>
+        <updated>2020-07-10T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>Something has been done</p> <ul> <li>Design side navigation for menu 'Component'</li> <li>Make some .md files for content 'Component' and linked them to side navigation</li> <li>wrote something on the blog</li> <li>Design page About</li> </ul> ]]></summary>
+        <author>
+            <name>Wiwit</name>
+            <uri>https://twitter.com/WiwitRafikaS</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Imitate react boostrap doc Website]]></title>
+        <id>https://rafirafika.github.iohttps://github.com/rafirafika/Docosaurus/blog/2020/07/09/Start-imitate-docWeb.html</id>
+        <link href="https://rafirafika.github.iohttps://github.com/rafirafika/Docosaurus/blog/2020/07/09/Start-imitate-docWeb.html"/>
+        <updated>2020-07-09T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>Start to imitate react boostrap documentation Website Something has been done</p> <ul> <li>Design navbar and menu</li> <li>Design home page, it took some time to design the logo -poor me T_T</li> <li>Design Footer,</li> <li>Design side navigation for menu 'Get Started'</li> <li>Make some .md files...</li></ul>]]></summary>
+        <author>
+            <name>Wiwit</name>
+            <uri>https://twitter.com/WiwitRafikaS</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Struggling with localization feature]]></title>
+        <id>https://rafirafika.github.iohttps://github.com/rafirafika/Docosaurus/blog/2020/07/08/Strugling-with-localization.html</id>
+        <link href="https://rafirafika.github.iohttps://github.com/rafirafika/Docosaurus/blog/2020/07/08/Strugling-with-localization.html"/>
+        <updated>2020-07-08T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>almost spent half of day to learn this feature.</p> ]]></summary>
+        <author>
+            <name>Wiwit</name>
+            <uri>https://twitter.com/WiwitRafikaS</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SetUp New Website]]></title>
+        <id>https://rafirafika.github.iohttps://github.com/rafirafika/Docosaurus/blog/2020/07/07/New-Sites.html</id>
+        <link href="https://rafirafika.github.iohttps://github.com/rafirafika/Docosaurus/blog/2020/07/07/New-Sites.html"/>
+        <updated>2020-07-07T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>Learn and follow instruction <a href="https://docusaurus.io/en/">Docosaurus</a> to make this documentation websites. this website is imitation from <a href="https://docusaurus.io/en/">react boostrap</a>. some things learned :</p> <ul> <li>Installation</li> <li>Creating website</li> <li>Adding Blog</li> <li>Make custom page</li> <li>Enbale search using Algolia (still err when ...</li></ul>]]></summary>
+        <author>
+            <name>Wiwit</name>
+            <uri>https://twitter.com/WiwitRafikaS</uri>
+        </author>
+    </entry>
+</feed>

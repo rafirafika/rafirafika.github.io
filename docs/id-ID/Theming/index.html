@@ -1,0 +1,125 @@
+<!DOCTYPE html><html lang="id-ID"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Atur tema dan menyesuaikan gaya · React Bootstrap</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Secara umum, jika Anda tetap menggunakan kelas dan varian yang ditentukan Bootstrap, tidak ada yang perlu Anda lakukan untuk menggunakan tema khusus dengan React-Bootstrap itu sudah bekerja Tapi kami juga membuat pewarnaan di luar garis mudah dilakukan"/><meta name="docsearch:language" content="id-ID"/><meta property="og:title" content="Atur tema dan menyesuaikan gaya · React Bootstrap"/><meta property="og:type" content="website"/><meta property="og:url" content="https://rafirafika.github.iohttps://github.com/rafirafika/Docosaurus/"/><meta property="og:description" content="Secara umum, jika Anda tetap menggunakan kelas dan varian yang ditentukan Bootstrap, tidak ada yang perlu Anda lakukan untuk menggunakan tema khusus dengan React-Bootstrap itu sudah bekerja Tapi kami juga membuat pewarnaan di luar garis mudah dilakukan"/><meta property="og:image" content="https://rafirafika.github.iohttps://github.com/rafirafika/Docosaurus/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://rafirafika.github.iohttps://github.com/rafirafika/Docosaurus/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="https://github.com/rafirafika/Docosaurus/img/RBoost.svg"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://rafirafika.github.iohttps://github.com/rafirafika/Docosaurus/blog/atom.xml" title="React Bootstrap Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://rafirafika.github.iohttps://github.com/rafirafika/Docosaurus/blog/feed.xml" title="React Bootstrap Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://github.com/rafirafika/Docosaurus/js/scrollSpy.js"></script><link rel="stylesheet" href="https://github.com/rafirafika/Docosaurus/css/main.css"/><script src="https://github.com/rafirafika/Docosaurus/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="https://github.com/rafirafika/Docosaurus/id-ID"><img class="logo" src="https://github.com/rafirafika/Docosaurus/img/RBoost.svg" alt="React Bootstrap"/><h2 class="headerTitleWithLogo">React Bootstrap</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="https://github.com/rafirafika/Docosaurus/docs/id-ID/Introduction" target="_self">Mulai</a></li><li class=""><a href="https://github.com/rafirafika/Docosaurus/docs/id-ID/Component/Alert" target="_self">Komponen</a></li><li class=""><a href="https://github.com/rafirafika/Docosaurus/blog/" target="_self">Blog</a></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="https://github.com/rafirafika/Docosaurus/img/language.svg" alt="Languages icon"/>Bahasa Indonesia</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="https://github.com/rafirafika/Docosaurus/docs/en/Theming">English</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(event) {
+          event.preventDefault();
+
+          if (languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Mulai</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Mulai</h3><ul class=""><li class="navListItem"><a class="navItem" href="https://github.com/rafirafika/Docosaurus/docs/id-ID/Introduction">Perkenalan</a></li><li class="navListItem"><a class="navItem" href="https://github.com/rafirafika/Docosaurus/docs/id-ID/Why">Kenapa React-Boostrap</a></li><li class="navListItem navListItemActive"><a class="navItem" href="https://github.com/rafirafika/Docosaurus/docs/id-ID/Theming">Atur Tema</a></li><li class="navListItem"><a class="navItem" href="https://github.com/rafirafika/Docosaurus/docs/id-ID/Support">Bantuan</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Layout</h3><ul class=""><li class="navListItem"><a class="navItem" href="https://github.com/rafirafika/Docosaurus/docs/id-ID/Layout">Grid</a></li><li class="navListItem"><a class="navItem" href="https://github.com/rafirafika/Docosaurus/docs/id-ID/LayoutMedia">Media</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Atur tema dan menyesuaikan gaya</h1></header><article><div><span><p>Secara umum, jika Anda tetap menggunakan kelas dan varian yang ditentukan Bootstrap, tidak ada yang perlu Anda lakukan untuk menggunakan tema khusus dengan React-Bootstrap itu sudah bekerja Tapi kami juga membuat pewarnaan di luar garis mudah dilakukan</p>
+<h2><a class="anchor" aria-hidden="true" id="new-variants-and-sizes"></a><a href="#new-variants-and-sizes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>New variants and sizes</h2>
+<p>Custom variants and sizes should follow the pattern of the default bootstrap variants, and define css classes matching: component-*. React bootstrap builds the component classNames in a consistent way that you can rely on. For instance this custom Button.</p>
+<pre><code class="hljs">&lt;&gt;
+  &lt;<span class="hljs-built_in">style</span> type=<span class="hljs-string">"text/css"</span>&gt;
+    {`
+    .btn-flat {
+      <span class="hljs-built_in">background</span>-<span class="hljs-built_in">color</span>: purple;
+      <span class="hljs-built_in">color</span>: white;
+    }
+
+    .btn-xxl {
+      padding: 1<span class="hljs-built_in">rem</span> <span class="hljs-number">1.</span>5<span class="hljs-built_in">rem</span>;
+      <span class="hljs-built_in">font</span>-size: <span class="hljs-number">1.</span>5<span class="hljs-built_in">rem</span>;
+    }
+    `}
+  &lt;/<span class="hljs-built_in">style</span>&gt;
+
+  &lt;Button variant=<span class="hljs-string">"flat"</span> size=<span class="hljs-string">"xxl"</span>&gt;
+    flat button
+  &lt;/Button&gt;
+&lt;/&gt;
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="prefixing-components"></a><a href="#prefixing-components" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Prefixing components</h2>
+<p>In some cases you may need to change the base class &quot;prefix&quot; of one or more Components. You can control how a Component prefixes its classes locally by changing the bsPrefix prop. Or globally via the ThemeProvider Component.</p>
+<blockquote>
+<p>Changing prefixes is an escape hatch and generally shouldn't be used.</p>
+</blockquote>
+<pre><code class="hljs"><span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+  </span><span class="hljs-template-tag">{/* <span class="hljs-name">Hint</span>: inspect the markup to see how the classes differ */}</span><span class="xml">
+  <span class="hljs-tag">&lt;<span class="hljs-name">ThemeProvider</span> <span class="hljs-attr">prefixes</span>=</span></span><span class="hljs-template-variable">{{ btn: 'my-btn' }</span><span class="xml"><span class="hljs-tag">}&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">variant</span>=<span class="hljs-string">"primary"</span>&gt;</span>My Button<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ThemeProvider</span>&gt;</span></span><span class="hljs-template-variable">{' '}</span><span class="xml">
+  <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">bsPrefix</span>=<span class="hljs-string">"super-btn"</span> <span class="hljs-attr">variant</span>=<span class="hljs-string">"primary"</span>&gt;</span>
+    Super button
+  <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+<span class="hljs-tag">&lt;/&gt;</span>
+</span></code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="https://github.com/rafirafika/Docosaurus/docs/id-ID/Why"><span class="arrow-prev">← </span><span>Kenapa React-Boostrap</span></a><a class="docs-next button" href="https://github.com/rafirafika/Docosaurus/docs/id-ID/Support"><span>Bantuan</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#new-variants-and-sizes">New variants and sizes</a></li><li><a href="#prefixing-components">Prefixing components</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap" style="margin-bottom:0px;max-width:350px;margin-left:50px"><div><a href="https://github.com/react-bootstrap/react-bootstrap" target="_blank">Github</a></div><div><a href="https://discord.gg/0ZcbPKXt5bXLs9XK" target="_blank" rel="noreferrer noopener">Discord</a></div><div><a href="https://codesandbox.io/s/github/react-bootstrap/code-sandbox-examples/tree/master/basic" target="_blank">Examples</a></div><div><a href="https://github.com/rafirafika/Docosaurus/id-ID/about.html">About</a></div></section><section class="copyright" style="max-width:1000px;margin-left:50px;text-align:left">Copyright © 2020 Designed and built with all the love in the world by Me</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                appId: 'D362NXAG0K',
+                apiKey: '5b4a10ab7c1c0aa2141f61c0315fb459',
+                indexName: 'docusaurus_TITLE',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>
