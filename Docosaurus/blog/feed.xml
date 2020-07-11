@@ -4,7 +4,7 @@
         <title>React Bootstrap Blog</title>
         <link>https://rafirafika.github.io/Docosaurus/blog</link>
         <description>The best place to stay up-to-date with the latest React Bootstrap news and events.</description>
-        <lastBuildDate>Fri, 10 Jul 2020 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 11 Jul 2020 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -14,11 +14,18 @@
         </image>
         <copyright>Copyright © 2020 Designed and built with all the love in the world by Me</copyright>
         <item>
+            <title><![CDATA[Start to publish]]></title>
+            <link>https://rafirafika.github.io/Docosaurus/blog/2020/07/11/Publish-In-Git-Page.html</link>
+            <guid>https://rafirafika.github.io/Docosaurus/blog/2020/07/11/Publish-In-Git-Page.html</guid>
+            <pubDate>Sat, 11 Jul 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>Something has been done</p> <ul> <li>choose free hosting server - Github Page I'M WITH U ^_^</li> <li>make project on github - this is my tutorial I used <a href="https://pages.github.com/">https://pages.github.com/</a></li> <li>setting siteConfig and build project</li> <li>commit and push all build result to github project (re...</li></ul>]]></description>
+        </item>
+        <item>
             <title><![CDATA[continue the previous blog]]></title>
             <link>https://rafirafika.github.io/Docosaurus/blog/2020/07/10/Start-imitate-docWeb.html</link>
             <guid>https://rafirafika.github.io/Docosaurus/blog/2020/07/10/Start-imitate-docWeb.html</guid>
             <pubDate>Fri, 10 Jul 2020 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p>Something has been done</p> <ul> <li>Design side navigation for menu 'Component'</li> <li>Make some .md files for content 'Component' and linked them to side navigation</li> <li>wrote something on the blog</li> <li>Design page About</li> </ul> ]]></description>
+            <description><![CDATA[<p>Something has been done</p> <ul> <li>Design side navigation for menu 'Component'</li> <li>Make some .md files for content 'Component' and linked them to side navigation</li> <li>wrote something on the blog</li> <li>Design page About</li> <li>Make new file translation and translate manually in crow...</li></ul>]]></description>
         </item>
         <item>
             <title><![CDATA[Imitate react boostrap doc Website]]></title>

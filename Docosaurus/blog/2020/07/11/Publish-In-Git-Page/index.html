@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Start to publish · React Bootstrap</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Something has been done"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Start to publish · React Bootstrap"/><meta property="og:type" content="website"/><meta property="og:url" content="https://rafirafika.github.io/Docosaurus/blog/2020/07/11/Publish-In-Git-Page"/><meta property="og:description" content="Something has been done"/><meta property="og:image" content="https://rafirafika.github.io/Docosaurus/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://rafirafika.github.io/Docosaurus/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/Docosaurus/img/RBoost.svg"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://rafirafika.github.io/Docosaurus/blog/atom.xml" title="React Bootstrap Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://rafirafika.github.io/Docosaurus/blog/feed.xml" title="React Bootstrap Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/Docosaurus/js/scrollSpy.js"></script><link rel="stylesheet" href="/Docosaurus/css/main.css"/><script src="/Docosaurus/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Docosaurus/en"><img class="logo" src="/Docosaurus/img/RBoost.svg" alt="React Bootstrap"/><h2 class="headerTitleWithLogo">React Bootstrap</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/Docosaurus/docs/en/Introduction" target="_self">Getting Started</a></li><li class=""><a href="/Docosaurus/docs/en/Component/Alert" target="_self">Component</a></li><li class="siteNavGroupActive"><a href="/Docosaurus/blog/" target="_self">Blog</a></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/Docosaurus/img/language.svg" alt="Languages icon"/>English</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/Docosaurus/id-ID">Bahasa Indonesia</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(event) {
+          event.preventDefault();
+
+          if (languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Recent Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Recent Posts</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/Docosaurus/blog/2020/07/11/Publish-In-Git-Page">Start to publish</a></li><li class="navListItem"><a class="navItem" href="/Docosaurus/blog/2020/07/10/Start-imitate-docWeb">continue the previous blog</a></li><li class="navListItem"><a class="navItem" href="/Docosaurus/blog/2020/07/09/Start-imitate-docWeb">Imitate react boostrap doc Website</a></li><li class="navListItem"><a class="navItem" href="/Docosaurus/blog/2020/07/08/Strugling-with-localization">Struggling with localization feature</a></li><li class="navListItem"><a class="navItem" href="/Docosaurus/blog/2020/07/07/New-Sites">SetUp New Website</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="lonePost"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/Docosaurus/blog/2020/07/11/Publish-In-Git-Page">Start to publish</a></h1><p class="post-meta">July 11, 2020</p><div class="authorBlock"><p class="post-authorName"><a href="https://twitter.com/WiwitRafikaS" target="_blank" rel="noreferrer noopener">Wiwit</a></p><div class="authorPhoto"><a href="https://twitter.com/WiwitRafikaS" target="_blank" rel="noreferrer noopener"><img src="https://graph.facebook.com/2384856656/picture/?height=200&amp;width=200" alt="Wiwit"/></a></div></div></header><div><span><p>Something has been done</p>
+<ul>
+<li>choose free hosting server - Github Page I'M WITH U  ^_^</li>
+<li>make project on github - this is my tutorial I used <a href="https://pages.github.com/">https://pages.github.com/</a></li>
+<li>setting siteConfig and build project</li>
+<li>commit and push all build result to github project (refer to step 2 above)</li>
+<li>When it's finished, this project can be accessed through <a href="https://rafirafika.github.io/Docosaurus/">https://rafirafika.github.io/Docosaurus/</a></li>
+</ul>
+</span></div></div><div class="blogSocialSection"><div class="blogSocialSectionItem"><div class="fb-like" data-href="https://rafirafika.github.io/Docosaurus/blog/2020/07/11/Publish-In-Git-Page" data-layout="standard" data-share="true" data-width="225" data-show-faces="false"></div></div><div class="blogSocialSectionItem"><div class="fb-comments" data-href="https://rafirafika.github.io/Docosaurus/blog/2020/07/11/Publish-In-Git-Page" data-width="100%" data-numposts="5" data-order-by="time"></div></div></div></div><div class="blog-recent"><a class="button" href="/Docosaurus/blog/">Recent Posts</a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap" style="margin-bottom:0px;max-width:350px;margin-left:50px"><div><a href="https://github.com/react-bootstrap/react-bootstrap" target="_blank">Github</a></div><div><a href="https://discord.gg/0ZcbPKXt5bXLs9XK" target="_blank" rel="noreferrer noopener">Discord</a></div><div><a href="https://codesandbox.io/s/github/react-bootstrap/code-sandbox-examples/tree/master/basic" target="_blank">Examples</a></div><div><a href="/Docosaurus/en/about.html">About</a></div></section><section class="copyright" style="max-width:1000px;margin-left:50px;text-align:left">Copyright © 2020 Designed and built with all the love in the world by Me</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>window.fbAsyncInit = function() {FB.init({appId:'729052927910834',xfbml:true,version:'v2.7'});};(function(d, s, id){var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) {return;}js = d.createElement(s); js.id = id;js.src = '//connect.facebook.net/en_US/sdk.js';fjs.parentNode.insertBefore(js, fjs);}(document, 'script','facebook-jssdk'));
+                </script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                appId: 'D362NXAG0K',
+                apiKey: '5b4a10ab7c1c0aa2141f61c0315fb459',
+                indexName: 'docusaurus_TITLE',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>
