@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Introduction · React Bootstrap</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Learn how to include React Bootstrap in your project."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Introduction · React Bootstrap"/><meta property="og:type" content="website"/><meta property="og:url" content="https://rafirafika.github.io/Docosaurus/"/><meta property="og:description" content="Learn how to include React Bootstrap in your project."/><meta property="og:image" content="https://rafirafika.github.io/Docosaurus/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://rafirafika.github.io/Docosaurus/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/Docosaurus/img/RBoost.svg"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://rafirafika.github.io/Docosaurus/blog/atom.xml" title="React Bootstrap Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://rafirafika.github.io/Docosaurus/blog/feed.xml" title="React Bootstrap Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/Docosaurus/js/scrollSpy.js"></script><link rel="stylesheet" href="/Docosaurus/css/main.css"/><script src="/Docosaurus/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Docosaurus/en"><img class="logo" src="/Docosaurus/img/RBoost.svg" alt="React Bootstrap"/><h2 class="headerTitleWithLogo">React Bootstrap</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive siteNavItemActive"><a href="/Docosaurus/docs/en/Introduction" target="_self">Getting Started</a></li><li class=""><a href="/Docosaurus/docs/en/Component/Alert" target="_self">Component</a></li><li class=""><a href="/Docosaurus/blog/" target="_self">Blog</a></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/Docosaurus/img/language.svg" alt="Languages icon"/>English</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/Docosaurus/docs/id-ID/Introduction">Bahasa Indonesia</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(event) {
+          event.preventDefault();
+
+          if (languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Getting Started</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/Docosaurus/docs/en/Introduction">Introduction</a></li><li class="navListItem"><a class="navItem" href="/Docosaurus/docs/en/Why">Why React-Bootstrap</a></li><li class="navListItem"><a class="navItem" href="/Docosaurus/docs/en/Theming">Theming</a></li><li class="navListItem"><a class="navItem" href="/Docosaurus/docs/en/Support">Support</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Layout</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Docosaurus/docs/en/Layout">Grid</a></li><li class="navListItem"><a class="navItem" href="/Docosaurus/docs/en/LayoutMedia">Media</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Introduction</h1></header><article><div><span><p>Learn how to include React Bootstrap in your project.</p>
+<h2><a class="anchor" aria-hidden="true" id="installation"></a><a href="#installation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installation</h2>
+<p>The best way to consume React-Bootstrap is via the npm package which you can install with npm (or yarn if you prefer).</p>
+<p>If you plan on customizing the Bootstrap Sass files, or don't want to use a CDN for the stylesheet, it may be helpful to install vanilla Bootstrap as well.</p>
+<pre><code class="hljs">npm <span class="hljs-keyword">install </span>react-<span class="hljs-keyword">bootstrap </span><span class="hljs-keyword">bootstrap
+</span></code></pre>
+<h2><a class="anchor" aria-hidden="true" id="importing-components"></a><a href="#importing-components" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Importing Components</h2>
+<p>You should import individual components like: react-bootstrap/Button rather than the entire library. Doing so pulls in only the specific components that you use, which can significantly reduce the amount of code you end up sending to the client.</p>
+<pre><code class="hljs"><span class="hljs-keyword">import</span> Button <span class="hljs-keyword">from</span> <span class="hljs-string">'react-bootstrap/Button'</span>;
+
+<span class="hljs-comment">// or less ideally</span>
+<span class="hljs-keyword">import</span> { Button } <span class="hljs-keyword">from</span> <span class="hljs-string">'react-bootstrap'</span>;
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="browser-globals"></a><a href="#browser-globals" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Browser globals</h3>
+<p>We provide react-bootstrap.js and react-bootstrap.min.js bundles with all components exported on the window.ReactBootstrap object. These bundles are available on unpkg, as well as in the npm package.</p>
+<pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/react/umd/react.production.min.js"</span> <span class="hljs-attr">crossorigin</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>
+  <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/react-dom/umd/react-dom.production.min.js"</span>
+  <span class="hljs-attr">crossorigin</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>
+  <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"</span>
+  <span class="hljs-attr">crossorigin</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript"><span class="hljs-keyword">var</span> Alert = ReactBootstrap.Alert;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="examples"></a><a href="#examples" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Examples</h2>
+<p>React-Bootstrap has started a repo with a few basic CodeSandbox examples. Click here to check them out.</p>
+<h2><a class="anchor" aria-hidden="true" id="morehttpsreact-bootstrapgithubiogetting-startedintroductionstylesheets"></a><a href="#morehttpsreact-bootstrapgithubiogetting-startedintroductionstylesheets" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://react-bootstrap.github.io/getting-started/introduction#stylesheets">More</a></h2>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 7/11/2020</em></div><div class="docs-prevnext"><a class="docs-next button" href="/Docosaurus/docs/en/Why"><span>Why React-Bootstrap</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#installation">Installation</a></li><li><a href="#importing-components">Importing Components</a><ul class="toc-headings"><li><a href="#browser-globals">Browser globals</a></li></ul></li><li><a href="#examples">Examples</a></li><li><a href="#morehttpsreact-bootstrapgithubiogetting-startedintroductionstylesheets"><a href="https://react-bootstrap.github.io/getting-started/introduction#stylesheets">More</a></a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap" style="margin-bottom:0px;max-width:350px;margin-left:50px"><div><a href="https://github.com/react-bootstrap/react-bootstrap" target="_blank">Github</a></div><div><a href="https://discord.gg/0ZcbPKXt5bXLs9XK" target="_blank" rel="noreferrer noopener">Discord</a></div><div><a href="https://codesandbox.io/s/github/react-bootstrap/code-sandbox-examples/tree/master/basic" target="_blank">Examples</a></div><div><a href="/Docosaurus/en/about.html">About</a></div></section><section class="copyright" style="max-width:1000px;margin-left:50px;text-align:left">Copyright © 2020 Designed and built with all the love in the world by Me</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                appId: 'D362NXAG0K',
+                apiKey: '5b4a10ab7c1c0aa2141f61c0315fb459',
+                indexName: 'docusaurus_TITLE',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>
