@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[54],{107:function(a){a.exports=JSON.parse('{"allTagsPath":"/palm-oil/blog/tags","slug":"hola","name":"hola","count":1,"permalink":"/palm-oil/blog/tags/hola"}')}}]);
